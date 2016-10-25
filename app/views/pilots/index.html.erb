@@ -1,0 +1,13 @@
+<h2>pilots <a href="/pilots/new">(+)</a></h2>
+
+<ul>
+  <% @pilots.each do |pilot| %>
+    <li>
+      <a href="/pilots/<%= pilot.id %>">
+        <%= pilot.name %>
+        <%= pilot.last_name %>
+        <%= pilot.polarization %>
+      </a>
+    </li>
+  <% end %>
+</ul>

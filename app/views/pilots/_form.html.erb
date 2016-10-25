@@ -1,0 +1,6 @@
+<%= simple_form_for @pilot do |f| %>
+  <%= f.input :name, label: 'Name:    ', error: 'Name is required' %>
+  <%= f.input :last_name, label: 'Last Name:    !', error: 'Last name is required' %>
+  <%= f.select :polarization, ['Right-->', '<--Left']%>
+  <%= f.button :submit %>
+<% end %>
